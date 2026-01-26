@@ -294,7 +294,7 @@ export default function WalletsPage() {
                 </a>
                 <a
                   className="btn btn-ghost"
-                  href="https://github.com/btdex/btdex/releases/download/v0.6.8/btdex-v0.6.8-macosx_x64.zip"
+                  href="https://github.com/btdex/btdex/releases/download/v0.6.8/btdex_0.6.8-1_amd64.deb"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Download for Liunx"
@@ -304,7 +304,7 @@ export default function WalletsPage() {
                 </a>
                 <a
                   className="btn btn-primary"
-                  href="https://github.com/signum-network/phoenix/releases/download/desktop-1.5.0-beta.3/mac-phoenix-signum-wallet.1.5.0-beta.3.dmg"
+                  href="https://github.com/btdex/btdex/releases/download/v0.6.8/btdex-v0.6.8-macosx_x64.zip"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Download for Mac OS"
