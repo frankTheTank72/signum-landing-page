@@ -1,5 +1,5 @@
 // App.tsx
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
 import SignumMainPage from "./pages/SignumMainPage";
 import PocPlusPage from "./pages/PocPlusPage";
@@ -16,6 +16,7 @@ import MessagePage from "./pages/MessagePage";
 import SNAPage from "./pages/SignumSNAPage";
 import SignumSubscriptionsPage from "./pages/SignumSubscriptionsPage";
 import AliasPage from "./pages/SmartAliasPage";
+import HDDMiningPage from "./pages/HDDMiningPage";
 
 import { Provider as ReduxProvider } from "react-redux";
 import { store } from "@lib/states/store";
@@ -54,6 +55,11 @@ export default function App() {
               <Route path="sna" element={<SNAPage />} />
               <Route path="aliases" element={<AliasPage />} />
               <Route path="alias" element={<AliasPage />} />
+              <Route path="/hdd-mining" element={<HDDMiningPage />} />
+              <Route
+                path="/hddmining"
+                element={<Navigate to="/hdd-mining" replace />}
+              />
               <Route
                 path="*"
                 element={<div className="p-10 text-center">Not Found</div>}
