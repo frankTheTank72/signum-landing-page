@@ -47,14 +47,20 @@ export default function App() {
               <Route path="mining" element={<MiningPage />} />
               <Route path="payments" element={<PaymentPage />} />
               <Route path="exchanges" element={<ExchangePage />} />
+              <Route
+                path="cex"
+                element={<Navigate to="/exchanges" replace />}
+              />
               <Route path="tokens" element={<TokenPage />} />
               <Route path="messages" element={<MessagePage />} />
-              <Route path="cex" element={<ExchangePage />} />
               <Route path="autopayment" element={<SignumSubscriptionsPage />} />
               <Route path="smartcontracts" element={<SmartContractsPage />} />
               <Route path="sna" element={<SNAPage />} />
               <Route path="aliases" element={<AliasPage />} />
-              <Route path="alias" element={<AliasPage />} />
+              <Route
+                path="alias"
+                element={<Navigate to="/aliases" replace />}
+              />
               <Route path="/hdd-mining" element={<HDDMiningPage />} />
               <Route
                 path="/hddmining"

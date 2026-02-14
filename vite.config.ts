@@ -26,6 +26,7 @@ export default defineConfig({
         "smartcontracts",
         "sna",
         "aliases",
+        "hdd-mining",
       ],
       changefreq: "weekly",
       robotsTxt: `User-agent: *\nAllow: /\n\nSitemap: ${siteUrl}/sitemap.xml\n`,
