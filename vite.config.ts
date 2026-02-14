@@ -11,7 +11,6 @@ export default defineConfig({
     sitemap({
       base: siteUrl,
       urls: [
-        "",
         "poc-plus",
         "disclaimer",
         "privacypolicy",
