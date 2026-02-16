@@ -39,7 +39,11 @@ export default function App() {
           <Routes>
             <Route path="/" element={<MainLayout />}>
               <Route index element={<SignumMainPage />} />
-              <Route path="poc-plus" element={<PocPlusPage />} />
+              <Route path="pocplus" element={<PocPlusPage />} />
+              <Route
+                path="/poc-plus"
+                element={<Navigate to="/pocplus" replace />}
+              />
               <Route path="disclaimer" element={<DisclaimerPage />} />
               <Route path="privacypolicy" element={<PrivacyPolicyPage />} />
               <Route path="aboutus" element={<AboutUsyPage />} />
