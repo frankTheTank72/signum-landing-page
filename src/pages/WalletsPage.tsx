@@ -28,6 +28,7 @@ import CommitmentVideo from "../assets/img/video/Commitment.png";
 
 import Platine from "../assets/img/mining/Platine.svg";
 import World from "../assets/img/wallet/SignumWorld.png";
+import SignumMobileWalletScreen from "../assets/img/wallet/SignumMobileWalletScreen.png";
 
 const videos = [
   {
@@ -83,28 +84,17 @@ export default function WalletsPage() {
           src={Platine}
           alt=""
           aria-hidden="true"
-          className="pointer-events-none select-none absolute z-0
-                     left-[-10%] top-0 h-[120%]
-                     hidden xl:block
-                     w-auto opacity-70
-                     [mask-image:linear-gradient(to_right,black,transparent_80%)]
-                     [-webkit-mask-image:linear-gradient(to_right,black,transparent_80%)]"
+          className="pointer-events-none absolute left-[-10%] top-0 z-0 hidden h-[120%] w-auto select-none opacity-70 xl:block [mask-image:linear-gradient(to_right,black,transparent_80%)] [-webkit-mask-image:linear-gradient(to_right,black,transparent_80%)]"
         />
 
         <img
           src={Platine}
           alt=""
           aria-hidden="true"
-          className="pointer-events-none select-none absolute z-0
-                     hidden lg:block
-                     right-[-5%] top-[-20%] h-[140%]
-                     w-auto opacity-60
-                     -scale-x-100
-                     [mask-image:linear-gradient(to_left,black,transparent_90%)]
-                     [-webkit-mask-image:linear-gradient(to_left,black,transparent_90%)]"
+          className="pointer-events-none absolute right-[-5%] top-[-20%] z-0 hidden h-[140%] w-auto -scale-x-100 select-none opacity-60 lg:block [mask-image:linear-gradient(to_left,black,transparent_90%)] [-webkit-mask-image:linear-gradient(to_left,black,transparent_90%)]"
         />
 
-        <Container className="relative z-10 py-12 min-h-110.25 sm:py-16">
+        <Container className="relative z-10 min-h-[420px] py-12 sm:py-16">
           <div className="grid items-center gap-8 md:grid-cols-2">
             <figure className="order-1 justify-self-center md:order-2 md:justify-self-end">
               <img
@@ -137,37 +127,27 @@ export default function WalletsPage() {
         <Container className="py-14">
           {/* Flagship Mobile Wallet */}
           <section className="mb-8">
-            <article className="relative overflow-hidden rounded-[2rem] border border-signum-blue/20 bg-gradient-to-br from-signum-blue via-signum-darkblue to-signum-midnight p-6 shadow-xl md:p-10">
-              <div className="absolute inset-0 opacity-20">
-                <img
-                  src={Platine}
-                  alt=""
-                  aria-hidden="true"
-                  className="h-full w-full object-cover"
-                />
-              </div>
+            <article className="relative card overflow-hidden p-6 md:p-10">
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-white via-white to-signum-acqua/30" />
 
-              <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-white/10 blur-3xl" />
-              <div className="absolute -bottom-24 -left-24 h-72 w-72 rounded-full bg-white/10 blur-3xl" />
-
-              <div className="relative z-10 grid items-center gap-8 lg:grid-cols-[1.2fr_0.8fr]">
+              <div className="relative z-10 grid items-center gap-10 lg:grid-cols-[1.2fr_0.8fr]">
                 <div>
-                  <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-white/15 px-4 py-2 text-sm font-semibold text-white ring-1 ring-white/20 backdrop-blur">
+                  <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-signum-acqua px-4 py-2 text-sm font-semibold text-signum-darkblue">
                     <FontAwesomeIcon icon={faMobileScreenButton} />
-                    Official Mobile Wallet
+                    Official Mobile Wallet · Recommended
                   </div>
 
-                  <h2 className="text-3xl font-bold tracking-tight text-white md:text-5xl">
+                  <h2 className="text-3xl font-bold tracking-tight text-signum-midnight md:text-5xl">
                     Signum Mobile Wallet
                   </h2>
 
-                  <p className="mt-4 max-w-3xl text-lg leading-relaxed text-white/90 md:text-xl">
+                  <p className="mt-4 max-w-3xl text-lg leading-relaxed text-signum-midnight md:text-xl">
                     The flagship wallet for every Signum user. Manage your
                     Signa, tokens and accounts directly from your phone —
                     simple, modern and ready for everyday use.
                   </p>
 
-                  <ul className="mt-6 grid gap-2 text-sm text-white/90 sm:grid-cols-2">
+                  <ul className="mt-6 grid gap-3 text-sm text-signum-midnight sm:grid-cols-2">
                     <li>• Available for iOS and Android</li>
                     <li>• Built for new and existing users</li>
                     <li>• Easy access to your Signum account</li>
@@ -176,7 +156,7 @@ export default function WalletsPage() {
 
                   <div className="mt-8 flex flex-wrap gap-3">
                     <a
-                      className="btn bg-white text-signum-midnight hover:bg-white/90"
+                      className="btn btn-primary"
                       href={mobileWalletLinks.googlePlay}
                       target="_blank"
                       rel="noreferrer"
@@ -191,7 +171,7 @@ export default function WalletsPage() {
                     </a>
 
                     <a
-                      className="btn bg-white text-signum-midnight hover:bg-white/90"
+                      className="btn btn-ghost"
                       href={mobileWalletLinks.appStore}
                       target="_blank"
                       rel="noreferrer"
@@ -206,7 +186,7 @@ export default function WalletsPage() {
                     </a>
 
                     <a
-                      className="btn border border-white/40 bg-white/10 text-white backdrop-blur hover:bg-white/20"
+                      className="btn btn-ghost"
                       href={mobileWalletLinks.landing}
                       target="_blank"
                       rel="noreferrer"
@@ -221,45 +201,18 @@ export default function WalletsPage() {
                     </a>
                   </div>
                 </div>
-                <div className="relative hidden items-center justify-center lg:flex">
-                  <div className="absolute h-80 w-80 rounded-full bg-white/10 blur-3xl" />
+                <div className="flex justify-center lg:justify-center">
+                  <div className="relative lg:-translate-x-6 xl:-translate-x-10">
+                    <div className="absolute inset-0 translate-x-3 translate-y-4 rounded-[2rem] bg-signum-blue/10 blur-2xl" />
 
-                  <div className="relative rotate-3 rounded-[2.5rem] border border-white/30 bg-white/15 p-3 shadow-2xl backdrop-blur-md">
-                    <div className="rounded-[2rem] bg-signum-midnight p-4 ring-1 ring-white/20">
-                      <div className="mx-auto mb-4 h-1.5 w-16 rounded-full bg-white/30" />
-
-                      <div className="overflow-hidden rounded-[1.5rem] bg-gradient-to-br from-signum-blue to-signum-darkblue p-5 text-white">
-                        <div className="mb-8 flex items-center justify-between">
-                          <div className="h-9 w-9 rounded-full bg-white/20" />
-                          <div className="text-xs font-semibold tracking-wide text-white/80">
-                            SIGNUM
-                          </div>
-                        </div>
-
-                        <p className="text-xs uppercase tracking-[0.25em] text-white/60">
-                          Balance
-                        </p>
-
-                        <p className="mt-2 text-3xl font-bold">SIGNA</p>
-
-                        <div className="mt-8 grid grid-cols-2 gap-3">
-                          <div className="rounded-2xl bg-white/15 p-3">
-                            <p className="text-xs text-white/60">Send</p>
-                            <p className="mt-1 text-sm font-semibold">Fast</p>
-                          </div>
-
-                          <div className="rounded-2xl bg-white/15 p-3">
-                            <p className="text-xs text-white/60">Tokens</p>
-                            <p className="mt-1 text-sm font-semibold">Ready</p>
-                          </div>
-                        </div>
-
-                        <div className="mt-4 rounded-2xl bg-white p-3 text-signum-midnight">
-                          <p className="text-xs font-semibold">Mobile Wallet</p>
-                          <p className="text-xs text-signum-midnight/70">
-                            iOS & Android
-                          </p>
-                        </div>
+                    <div className="relative rotate-0 transition-transform duration-300 lg:rotate-[4deg]">
+                      <div className="rounded-[2.25rem] border border-neutral-200 bg-white p-2.5 shadow-xl">
+                        <img
+                          src={SignumMobileWalletScreen}
+                          alt="Signum Mobile Wallet app screenshot"
+                          className="h-auto w-[190px] rounded-[1.75rem] sm:w-[220px] md:w-[250px]"
+                          loading="eager"
+                        />
                       </div>
                     </div>
                   </div>
@@ -271,7 +224,7 @@ export default function WalletsPage() {
           {/* Wallet Cards */}
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 xl:grid-cols-3">
             {/* XT Wallet */}
-            <article className="relative card p-6 overflow-hidden">
+            <article className="relative card overflow-hidden p-6">
               <img
                 src="/img/wallets/XT.png"
                 alt="XT Wallet Logo"
@@ -358,7 +311,7 @@ export default function WalletsPage() {
             </article>
 
             {/* Phoenix */}
-            <article className="relative card p-6 overflow-hidden">
+            <article className="relative card overflow-hidden p-6">
               <img
                 src="/img/wallets/PhoenixLogo.svg"
                 alt="Phoenix Wallet Logo"
@@ -431,7 +384,7 @@ export default function WalletsPage() {
             </article>
 
             {/* BTDEX */}
-            <article className="relative card p-6 overflow-hidden">
+            <article className="relative card overflow-hidden p-6">
               <img
                 src="/img/wallets/BTDEXLogo.svg"
                 alt="BTDEX Logo"
@@ -506,11 +459,11 @@ export default function WalletsPage() {
 
           {/* Learn more */}
           <div className="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-2">
-            <article className="relative card p-6 overflow-hidden">
+            <article className="relative card overflow-hidden p-6">
               <img
                 src="/img/wallets/ExchnangeTrailer.svg"
                 alt="Learn Signum"
-                className="absolute right-4 top-4 h-34 w-34 opacity-80 md:h-44 md:w-44"
+                className="absolute right-4 top-4 h-32 w-32 opacity-80 md:h-40 md:w-40"
               />
 
               <h3 className="text-lg font-semibold text-signum-midnight">
@@ -573,7 +526,7 @@ export default function WalletsPage() {
               </div>
             </article>
 
-            <article className="relative card p-6 overflow-hidden">
+            <article className="relative card overflow-hidden p-6">
               <img
                 src="/img/wallets/Signum_Logo_darkblue.svg"
                 alt="Signum Logo"
