@@ -553,7 +553,7 @@ export default function WalletsPage() {
               <div className="mt-4 flex flex-wrap gap-3">
                 <a
                   className="btn btn-primary"
-                  href="https://github.com/signum-network/signum-node/releases/download/v3.9.6/signum-node-v3.9.6-win_x64.zip"
+                  href="https://github.com/signum-network/signum-node/releases/download/v3.9.8/signum-node-v3.9.8-win_x64.zip"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Download for Windows"
@@ -564,7 +564,7 @@ export default function WalletsPage() {
 
                 <a
                   className="btn btn-ghost"
-                  href="https://github.com/signum-network/signum-node/releases/download/v3.9.6/signum-node-v3.9.6.zip"
+                  href="https://github.com/signum-network/signum-node/releases/download/v3.9.8/signum-node-v3.9.8.zip"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Download for Linux"
@@ -575,7 +575,7 @@ export default function WalletsPage() {
 
                 <a
                   className="btn btn-primary"
-                  href="https://github.com/signum-network/signum-node/releases/download/v3.9.6/signum-node-v3.9.6.zip"
+                  href="https://github.com/signum-network/signum-node/releases/download/v3.9.8/signum-node-v3.9.8.zip"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Download for Mac OS"
