@@ -545,9 +545,9 @@ export default function WalletsPage() {
               </p>
 
               <ul className="mt-4 list-disc space-y-1 pl-5 text-sm text-signum-midnight">
-                <li>Minimum: 1 vCPU, 2 GB RAM, 30 GB HDD</li>
-                <li>Recommendation: 2 vCPU, 4 GB RAM, 40 GB HDD</li>
-                <li>Supported DBs: SQLite, MariaDB, PostgreSQL</li>
+                <li>Minimum: 1 vCPU, 2 GB RAM, 30 GB HDD.</li>
+                <li>Recommendation: 2 vCPU, 4 GB RAM, 40 GB HDD.</li>
+                <li>Supported DBs: SQLite, MariaDB, PostgreSQL.</li>
               </ul>
 
               <div className="mt-4 flex flex-wrap gap-3">
