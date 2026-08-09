@@ -5,8 +5,6 @@ import { Link } from "react-router-dom";
 
 import Platine from "../assets/img/mining/Platine.svg";
 
-import BitmartLogo from "../assets/img/exchanges/Bitmart.svg";
-import BitstorageLogo from "../assets/img/exchanges/bitstorage.webp";
 import DexTradeLogo from "../assets/img/exchanges/Dex-Trade.webp";
 import AzbitLogo from "../assets/img/exchanges/AzbitLogo.png";
 import SuperExLogo from "../assets/img/exchanges/SuperExLogo.png";
@@ -28,15 +26,6 @@ type Exchange = {
 };
 
 const CEXES: Exchange[] = [
-  {
-    name: "Bitmart",
-    href: "https://www.bitmart.com/invite/Signum/en",
-    logo: BitmartLogo,
-    region: "Global",
-    kyc: true,
-    notes: "Top 20 CEX",
-    status: "active",
-  },
   {
     name: "Dex-Trade",
     href: "https://dex-trade.com/refcode/119za6",
@@ -62,15 +51,6 @@ const CEXES: Exchange[] = [
     region: "Global",
     kyc: false,
     notes: "Signum Smart Tokens are inegrated in the free market",
-    status: "active",
-  },
-  {
-    name: "Bitstorage",
-    href: "https://bitstorage.finance/refcode/h9akri",
-    logo: BitstorageLogo,
-    region: "Global",
-    kyc: false,
-    notes: "Classic CEX interface",
     status: "active",
   },
 ];
